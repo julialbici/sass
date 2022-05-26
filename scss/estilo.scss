@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "header";
+@import "footer";
+
+.productosDestacados {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 1px orange solid;
+    border-radius: 7px;
+    background-color: black;
+    color: black;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-shadow: 1px 1px 10px;
+    margin-left: 10px;
+}
+
+
+.dondeEstamos {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 1px orange solid;
+    border-radius: 7px;
+    background-color: black;
+    color: black;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-shadow: 1px 1px 10px;
+    margin-left: 10px;
+}
+
+
+body {
+    display: flex;
+}
+
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 23px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.precio {
+    color: green;
+}
+
+
+.ultimaInfo {
+
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+}
+
+
+.quienesSomos h2 {
+    font-size: 25px;
+}
+
+
+
+
+
+.bodyIndex {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "header header header"
+        "prodDestacado prodDestacado prodDestacado"
+        "main main main"
+        "ultimaInfo ultimaInfo ultimaInfo"
+        "dondeEstamos dondeEstamos dondeEstamos"
+        "mapa native quienesSomos"
+        "footer footer footer";
+
+    gap: 50px;
+}
+
+
+header {
+    grid-area: header;
+}
+
+
+.productosDestacados {
+    grid-area: prodDestacado;
+}
+
+
+main {
+    grid-area: main;
+
+}
+
+
+.ultimaInfo {
+    grid-area: ultimaInfo;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+.dondeEstamos {
+    grid-area: dondeEstamos;
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+
+.native {
+    grid-area: native;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.quienesSomos p {
+    grid-area: quienesSomos;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 37px;
+    text-align: right;
+}
+
+.quienesSomos h2 {
+    color: orange;
+    text-align: center;
+    font-size: 33 px;
+    
+}
+
+.quienesSomos {
+    border: 10px solid orange;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+.regalaGiftCards {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 1px orange solid;
+    border-radius: 7px;
+    background-color: black;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    grid-area: regalaGift;
+    box-shadow: 1px 1px 10px;
+    margin-left: 10px;
+    width: 100%;
+    height: 150%;
+}
+
+
+.mainGiftCards {
+    grid-area: mainGiftCards;
+}
+
+.lastSection {
+    grid-area: lastSection;
+    margin-left: 10px;
+}
+
+
+.bodyGiftCards {
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "header header header"
+        "regalaGift regalaGift regalaGift"
+        "mainGiftCards mainGiftCards mainGiftCards"
+        "lastSection lastSection lastSection "
+        "footer footer footer";
+
+    gap: 50px;
+}
+
+
+@media (max-width: 600px) {
+
+    .bodyIndex {
+
+        display: grid;
+        grid-template-areas:
+            "header"
+            "prodDestacado"
+            "main"
+            "ultimaInfo"
+            "dondeEstamos"
+            "mapa"
+            "native"
+            "footer";
+
+        gap: 50px;
+    }
+
+    .fondoPrincipal nav ul li a {
+
+        display: none;
+
+    }
+
+    .quienesSomos {
+        display: none;
+    }
+
+    .native {
+        display: none;
+    }
+
+    .footer {
+
+        max-width: 90%;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    
+.bodyGiftCards {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "regalaGift"
+    "mainGiftCards"
+    "lastSection"
+    "footer";
+}
+
+.fondoPrincipal nav ul li a {
+    display: none;
+}
+
+
+
+}
+
+
+.productosDestacados {
+    background-image: linear-gradient(to right, #fdc830, #f37335);
+}
+
+.dondeEstamos {
+    background-image: linear-gradient(to right, #fdc830, #f37335);
+
+}
+
+.regalaGiftCards {
+ 
+    background-image: linear-gradient(to right, #fdc830, #f37335);
+
+}
+
