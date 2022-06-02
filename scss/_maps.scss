@@ -1,0 +1,16 @@
+$estilo:(color:black, tamFuente:20px);
+
+.productosDestacados {
+    color: map-get($estilo,color);
+    font-size: map-get($estilo,tamFuente);
+    font-family: 'Roboto', sans-serif;
+    border: 1px orange solid;
+    border-radius: 100px;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-shadow: 1px 1px 10px;
+    margin-left: 10px;
+}

@@ -78,7 +78,7 @@ nav ul .colorIndice a {
 }
 
 
-.productosDestacados {
+/* .productosDestacados {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     border: 1px orange solid;
@@ -92,10 +92,10 @@ nav ul .colorIndice a {
     align-items: center;
     box-shadow: 1px 1px 10px;
     margin-left: 10px;
-}
+} */
 
 
-.dondeEstamos {
+/* .dondeEstamos {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     border: 1px orange solid;
@@ -109,7 +109,7 @@ nav ul .colorIndice a {
     align-items: center;
     box-shadow: 1px 1px 10px;
     margin-left: 10px;
-}
+} */
 
 
 body {
